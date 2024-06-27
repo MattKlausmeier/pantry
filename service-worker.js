@@ -6,7 +6,7 @@ self.addEventListener('fetch', event => {
             const networkFetch = fetch(event.request).then(response => {
                 // update the cache with a clone of the network response
                 const responseClone = response.clone();
-                const url = event.request.url;
+                const url = new URL(event.request.url);
                 caches.open(url.searchParams.get('name')).then(cache => {
                     cache.put(event.request, responseClone);
                 })

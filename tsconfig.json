@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "/dev/null", // We just want type checking, not compiling.
+    "target": "ES6",
+    "lib": ["ES2016", "DOM"],
+    "checkJs": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./js/*.js"
+  ]
+}

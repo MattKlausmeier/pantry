@@ -1,0 +1,26 @@
+{
+    "theme_color": "#000453",
+    "background_color": "#094900",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "/images/icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "/images/icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "en-US",
+    "name": "Pantry",
+    "short_name": "Pantry",
+    "id": "pantry.mattklausmeier.com",
+    "description": "Pantry helps you keep track of your food inventory and expiration dates."
+}

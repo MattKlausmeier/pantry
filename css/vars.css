@@ -1,0 +1,15 @@
+:root {
+  --menu: #b46428;
+  --section: #f9eac5;
+  --menu-text: #ffcf56;
+  --section-text: #3f230e;
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --sar: env(safe-area-inset-right);
+  --sat: env(safe-area-inset-top);
+}
+
+@font-face {
+  font-family: "TitleFont";
+  src: url(/fonts/Sacramento-Regular.ttf) format("truetype");
+}

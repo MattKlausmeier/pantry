@@ -1,21 +1,16 @@
-Scripts:
-    ☐ Init App
-
-Startup:
-    - Connect to local DB
-    - Check for DB tables, build as necessary
-    - Prompt for install
+TODO:
+    ☐ Install Instructions
+    ☐ Build DB (if missing)
+    ☐ Show Main Page
 
 Long Term:
-    ☐ Manifest
-    ☐ Service Worker
-    ☐ Install Prompt
-    ☐ Backup/sync (Supabase? Tiny DB?)
+    ☐ Backup/sync (Supabase? Tiny DB? Save to Image?)
 
 Reference:
-    - Check for DOM object: https://www.geeksforgeeks.org/how-to-check-a-javascript-object-is-a-dom-object/
+    - If making a ContentPage-esque library:
+        - Check for DOM object: https://www.geeksforgeeks.org/how-to-check-a-javascript-object-is-a-dom-object/
+        - JS iterate arguments:
+            - function foo() { for (var i = 0; i < arguments.length; i++) { ... } }
+        - ContentPage, NavPage, etc: https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/contentpage?view=net-maui-8.0
     - VanJS: https://vanjs.org/tutorial
-    - JS iterate arguments:
-        - function foo() { for (var i = 0; i < arguments.length; i++) { ... } }
-    - ContentPage, NavPAge, etc: https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/contentpage?view=net-maui-8.0
     - IndexedDB: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API

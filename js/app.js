@@ -1,14 +1,19 @@
 import van from "./van-1.5.0.min.js";
 import { ui } from './ui/ui.js'
+import { db } from './db.js'
 
 window.onload = async () => {
+    // If app is not installed as a PWA...
     if (!window.matchMedia("(display-mode: standalone)").matches) {
-        // If app is not installed as a PWA...
-        if (!(await window.indexedDB.databases()).map(db => db.name).includes("pantry")) {
-            // and the database doesn't exist, show the install prompt
+        // Check if the database exists.
+        const exists = await db.GetDBExists();
+        if (!exists) {
+            // Show the "Install" prompt.
             const bb = document.getElementById("bottombox");
             if (bb != null) {
                 van.add(bb, ui.Install(), ui.Fg1(), ui.AuthorSpan());
+            } else {
+                window.location.reload();
             }
         } else {
             showApp();

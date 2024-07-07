@@ -1,7 +1,28 @@
 TODO:
+    ☐ PageManager
+        ☐ Init()
+        ☐ Modal popup
     ☐ Install Instructions
+        ☐ iOS
+            ☐ Get screenshots
+            ☐ Write copy
+        ☐ Android
+            ☐ Get screenshots
+            ☐ Write copy
     ☐ Build DB (if missing)
+        ☐ Info
+            ☐ DB Version
+        ☐ Containers
+            ☐ ContainerID
+            ☐ Name
+        ☐ Items
+            ☐ ItemID
+            ☐ ContainerID
+            ☐ Name
+            ☐ ...
     ☐ Show Main Page
+        ☐ Replace main, or refill it?
+    ☐ ContentPage (css)
 
 Long Term:
     ☐ Backup/sync (Supabase? Tiny DB? Save to Image?)

@@ -43,7 +43,7 @@ main {
     }
 
     #title {
-        font-family: "TitleFont";
+        font-family: "TitleFont", cursive;
         font-size: 120px;
         font-weight: 400;
         margin: 20px;

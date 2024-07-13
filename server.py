@@ -4,7 +4,7 @@ import ssl
 import sys
 
 def get_ssl_context(certfile, keyfile):
-    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
     context.load_cert_chain(certfile, keyfile)
     context.set_ciphers("@SECLEVEL=1:ALL")
     return context

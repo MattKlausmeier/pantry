@@ -1,8 +1,10 @@
 import van from "./van-1.5.0.min.js";
-import { ui } from './ui/ui.js'
+import { ui, pm } from './ui/ui.js'
 import { db } from './db.js'
 
 window.onload = async () => {
+    // Initialize PageManager
+    pm.Init();
     // If app is not installed as a PWA...
     if (!window.matchMedia("(display-mode: standalone)").matches) {
         // Check if the database exists.

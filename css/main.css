@@ -1,4 +1,13 @@
 main {
+    --size: 62px;
+    --color1: #562e01;
+    --color2: #4e2a00;
+    --grad: #0000 45%, var(--color1) 46% 54%, #0000 55%;
+    background:
+        linear-gradient(60deg, var(--grad)),
+        linear-gradient(-60deg, var(--grad)) var(--color2);
+    background-size: var(--size) calc(tan(60deg)*var(--size));
+    
     color: var(--menu-text);
     display: flex;
     flex-direction: column;

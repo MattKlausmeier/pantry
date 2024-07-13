@@ -1,13 +1,15 @@
 html {
-    --size: 62px;
-    --color1: #562e01;
-    --color2: #4e2a00;
-    --grad: #0000 45%, var(--color1) 46% 54%, #0000 55%;
-    background:
-        linear-gradient(60deg, var(--grad)),
-        linear-gradient(-60deg, var(--grad)) var(--color2);
-    background-size: var(--size) calc(tan(60deg)*var(--size));
-
+    background-color: black;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
+}
+
+#blur {
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    z-index: 20;
 }
